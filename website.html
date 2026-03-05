@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .img{
+        margin-left: 50px;
+        width: 70px;
+    }
+    .nav{
+     text-decoration: none;
+     margin-left: 20px;
+     color: black;
+    }
+    .navs{
+        margin-left: 200px;
+             text-decoration: none;
+                  color: black;    
+    }
+    .container {
+  position: relative;
+  width: 500px;
+}
+
+.container img {
+  width:1400px;
+}
+
+.text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:black;
+  font-size: 15px;
+  font-weight: bold;
+}
+#img2{
+display:none;
+}
+ .blogs{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:5px;
+            margin-left:50px;
+        }
+    
+        .blog-card{
+            background:white;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow:0 4px 8px rgba(0,0,0,0.1);
+        }
+        .img-container{
+            position:relative;
+            width:100%;
+        }
+    .image-text{
+            position:absolute;
+            top:10px;
+            left:250px;
+            background-color:white;
+            color:black;
+            padding:5px 10px;
+            border-radius:5px;
+            font-size:14px;
+        
+        }
+         .blog-card img{
+            width:250px;
+            height:200px;
+         border-radius: 10px;
+         display:block;
+        }
+            
+
+
+
+
+.btn{
+background:#0067b8;
+color:white;
+border:none;
+padding:10px 20px;
+margin-top:10px;
+cursor:pointer;
+}
+
+
+
+</style>
+<body>
+<script>
+
+var i = 0;
+
+setInterval(function(){
+
+    if(i==0)
+    {
+        document.getElementById("img1").style.display="none";
+        document.getElementById("img2").style.display="block";
+
+        document.getElementById("text1").style.display="none";
+        document.querySelector(".box").style.display="block";
+
+        i = 1;
+    }
+    else
+    {
+        document.getElementById("img1").style.display="block";
+        document.getElementById("img2").style.display="none";
+
+        document.getElementById("text1").style.display="block";
+        document.querySelector(".box").style.display="none";
+
+        i = 0;
+    }
+
+},2000);
+
+</script>
+    
+    <table class="head">
+        <tr>
+       <td> <img class="img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3AjLz2Ze01BXCesLCvOhwrlz9qHboz6XEwQ&s"alt="logo"></td>
+    <td><h1>Microsoft</h1></td>
+      <td>
+                <a href="#" class="nav" >Microsoft365</a>
+                <a href="#" class="nav">Teams</a>
+                <a href="#" class="nav">Copilot</a>
+                <a href="#" class="nav">Windows</a>
+                <a href="#"class="nav">Surface</a>
+                <a href="#" class="nav">Xbox</a>
+             <a href="#" class="nav">Support</a>
+<td>
+                    <a href="#" class="navs">All Microsoft</a>
+                    <a href="#" class="nav">&#128269</a>
+                    <a href="#" class="nav">&#128722</a>
+                    <a href="#" class="nav">&#128100</a>
+
+
+
+</td>
+                
+
+            </td>
+    </tr>      
+    </table>
+    <div class="container">
+  <img  class="dic" id="img1"src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-M365-Icon-Bounce-Premium:VP4-1399x600" alt="image">
+    <img  class="dic" id="img2"src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682:VP4-1399x600" alt="image">
+
+  <div class="text" id="text1"><h1>Microsoft 365</h1>
+<p>Introducing Microsoft 365 Premium with our highest usage limits and exclusive Copilot features for AI power users.</h2></p>
+<div class="box">
+    <h1>Meet Surface Pro</h1>
+    <p>
+        This laptop's unrivalled flexibility and AI features like Live
+        Captions and Cocreator enable you to do more than you ever imagined.
+    </p>
+    <button class="btn">Learn more</button>
+</div>
+</div>
+    <div class="blogs">
+
+    <div class="blog-card">
+        <div class="img-container">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Laptop-AI-7Ed-Sapphire-MC001?wid=297&hei=167&fit=crop">
+        </div>
+        <p>Surface Laptop, Copilot+ PC
+Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop</p>
+    </div>
+
+    <div class="blog-card">
+        <div class="img-container">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSX-CP-Xbox-Series-X?wid=297&hei=167&fit=crop">
+            
+        </div>
+        <p>Xbox Series X
+The fastest, most powerful Xbox ever.
+</p>
+    </div>
+
+    <div class="blog-card">
+        <div class="img-container">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-CP-Xbox-Series-S-Evergreen?wid=297&hei=167&fit=crop">
+            
+        </div>
+    
+        <p>Xbox Series S
+Next-gen performance in the smallest Xbox ever.</p>
+        </div>
+     <div class="blog-card">
+        <div class="img-container">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Digital-Content-Xbox-Game-Pass-Oct25?wid=297&hei=167&fit=crop">
+            
+        </div>
+        <p>Surface Laptop, Copilot+ PC
+Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop</p>
+    </div>
+    </div>
+<div>
+    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP4-1260x600">
+</div>
+<h2>For Business</h2>
+  <div class="blogs">
+
+    <div class="blog-card">
+        <div class="img-container">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-Pro-AI-11Ed-Platinum-x86-001-COMMR?wid=297&hei=167&fit=crop">
+        </div>
+        <p>Surface Laptop, Copilot+ PC
+Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop</p>
+    </div>
+
+    <div class="blog-card">
+        <div class="img-container">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Copilot-COMMR-0625?wid=297&hei=167&fit=crop">
+            
+        </div>
+        <p>Xbox Series X
+The fastest, most powerful Xbox ever.
+</p>
+    </div>
+
+    <div class="blog-card">
+        <div class="img-container">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Feature-Azure-Wave-Off-White?wid=297&hei=167&fit=crop">
+            
+        </div>
+    
+        <p>Xbox Series S
+Next-gen performance in the smallest Xbox ever.</p>
+        </div>
+     <div class="blog-card">
+        <div class="img-container">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Visual-Studio-2026-Screen-Closeup?wid=297&hei=167&fit=crop">
+            
+        </div>
+        <p>Surface Laptop, Copilot+ PC
+Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop</p>
+    </div>
+    </div>
+    <h3 >Follow Microsoft</h3>
+
+
+</body>
+</html>
